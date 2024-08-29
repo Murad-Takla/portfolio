@@ -1,0 +1,117 @@
+.marquee-wrapper {
+    overflow: hidden;
+    padding: 10px 0;
+    width: 100%;
+    
+    /* Optional: Match your site background */
+}
+
+
+#my-skills {
+    padding-top: 80px; /* Adjust based on the height of your navbar */
+    margin-top: -80px; /* Same value as padding-top */
+  }
+
+  
+.marquee {
+    display: flex;
+  
+    /* Ensure enough width for continuous scrolling */
+    animation: marquee 15s linear infinite;
+}
+
+.marquee-item {
+    flex: 0 0 auto;
+    padding: 0 20px;
+    /* Adjust spacing between items */
+}
+
+.marquee-item img {
+    height: 100px;
+    /* Adjust size as needed */
+}
+
+/* Keyframes for continuous scroll */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 640px) {
+    .marquee {
+        width: calc(400% + 20px);
+        /* Adjust width to ensure all items are visible */
+        animation-duration: 30s;
+        /* Slow down the animation for smaller screens */
+    }
+
+    .marquee-item img {
+        height: 30px;
+        /* Smaller icons for smaller screens */
+        padding: 0 10px;
+        /* Reduce spacing between items */
+    }
+}
+
+/* Pause animation on hover */
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+.border-effect {
+    
+    font-size: 24px;
+    color: #fff;
+    border: none;
+   
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.border-effect::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(rgb(63, 6, 6),
+            #0D1224,
+            rgb(51, 54, 51),
+            aqua,
+            rgb(31, 31, 171),
+            magenta,
+            rgb(34, 22, 22));
+    animation: spin 2s linear infinite;
+    z-index: -2;
+}
+
+.border-effect::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #ffffff;
+  
+    z-index: -1;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
