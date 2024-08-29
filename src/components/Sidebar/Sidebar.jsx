@@ -65,10 +65,18 @@ const Sidebar = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="#my-projects"
               className="font-medium text-neutral-600 underline-offset-2 hover:text-black focus:outline-none focus:underline dark:text-neutral-300 dark:hover:text-white"
             >
-              Login
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#my-contact"
+              className="font-medium text-neutral-600 underline-offset-2 hover:text-black focus:outline-none focus:underline dark:text-neutral-300 dark:hover:text-white"
+            >
+              Contact
             </a>
           </li>
         </ul>
@@ -144,10 +152,18 @@ const Sidebar = () => {
             </li>
             <li className="py-4">
               <a
-                href="#"
+                href="#my-projects"
                 className="w-full text-lg font-medium text-neutral-600 focus:underline dark:text-neutral-300"
               >
                 Projects
+              </a>
+            </li>
+            <li className="py-4">
+              <a
+                href="#my-contact"
+                className="w-full text-lg font-medium text-neutral-600 focus:underline dark:text-neutral-300"
+              >
+               Contact
               </a>
             </li>
           </ul>

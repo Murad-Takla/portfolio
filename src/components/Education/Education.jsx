@@ -1,16 +1,20 @@
 import React from 'react';
 
-
+import './Education.css'
 const Education = () => {
     return (
         <div id='myEducation' className='container mx-auto mt-5 px-4 mb-2'>
-            <div className="flex items-center mx-5 lg:mx-0 mb-6">
-                <div className="bg-[#241E4C] text-white px-4 py-2 rounded-md">
-                    Education
-                </div>
-                <div className="flex-grow border-t border-purple-900"></div>
-            </div>
+            <div className=' lg:mx-0'>
+                    <div className=" my-5 flex items-center before:h-px before:flex-1  before:bg-[#241E4C] before:content-[''] after:h-px after:flex-1 after:bg-[#241E4C]  after:content-['']">
+                        <div
+                            type="button"
+                            className="flex items-center rounded border border-gray-300 bg-[#241E4C] px-3 py-2 text-center text-md font-serif  text-white"
+                        >
 
+                            Educations
+                        </div>
+                    </div>
+                </div>
             <div className="box flex flex-col lg:flex-row lg:space-x-4 ">
 
                <div className='w-1/2 lg:flex  items-center hidden'>
@@ -47,7 +51,7 @@ const Education = () => {
                                     </svg>
                                 </div>
                                 <div>
-                                    <p className="text-base sm:text-xl mb-2 font-medium uppercase">BSc Computer Science</p>
+                                    <p className="text-base sm:text-xl mb-2 font-medium uppercase">BS<span className='lowercase'>c</span> in Computer Science</p>
                                     <p className="text-sm sm:text-base">International Islamic University Chittagong</p>
                                 </div>
                             </div>
@@ -119,6 +123,9 @@ const Education = () => {
                     </div>
 
                 </div>
+            </div>
+            <div className='mt-5'>
+                <hr className='bg-[#101123] h-[2px]'/>
             </div>
         </div>
     );
