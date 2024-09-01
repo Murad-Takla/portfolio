@@ -1,5 +1,5 @@
 import React from 'react';
-
+import profilePic from '../../picture/profile.jpg'
 const Home = () => {
     return (
         <div  id="home" className="mt-[85px] font-poppins bg-black relative ">
@@ -8,7 +8,7 @@ const Home = () => {
                     <div className='flex justify-center' >
                         <img
                             className="rounded-lg  lg:w-1/2"
-                            src="https://scontent.fcgp7-1.fna.fbcdn.net/v/t39.30808-6/270295821_1005651650033772_8557399846375823340_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGfeOw-BQBNFQFYC3ow7nYNSmyuSJAtYdhKbK5IkC1h2CsThp5BtKixbFIId4HhIF5VE4d1zgAk6ew-P7JLBT8L&_nc_ohc=EwmI4Iof7UoQ7kNvgEv400h&_nc_ht=scontent.fcgp7-1.fna&_nc_gid=AVaSDkhYajZkSlN-NVoyARX&oh=00_AYAysikwU6wztl5wf_Jd-KCsx81T01FSxe2CbnDRfFwycA&oe=66D41847"
+                            src={profilePic}
                             alt="image of myself"
                         />
                     </div>

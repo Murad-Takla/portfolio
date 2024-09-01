@@ -6,11 +6,11 @@ const Contact = () => {
             <div className="sm:p-10 my-auto">
                 <section className="mx-auto max-w-screen-xl md:rounded-md md:border md:shadow-lg">
                     <div className="grid grid-cols-4 text-gray-800 lg:grid-cols-3">
-                        <div className="col-span-4 bg-gray-50 px-8 py-10 text-gray-800 md:col-span-2 md:border-r md:px-10 md:py-12 lg:col-span-1">
+                        <div className="col-span-4  bg-gray-50 px-8 py-10 text-gray-800 md:col-span-2 md:border-r md:px-10 md:py-12 lg:col-span-1">
                             <h2 className="mb-8 text-2xl font-black">Contact me</h2>
-                            <ul>
-                                <li className="mb-6 flex items-start text-left">
-                                    <a title="Gmail" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-violet-600 dark:text-gray-50">
+                            <ul className=''>
+                                <li className="mb-6 flex  items-start gap-2 text-left">
+                                    <a title="Gmail" className="flex  items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-violet-600 dark:text-gray-50">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-4 h-4">
                                             <path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path>
                                         </svg>
@@ -25,7 +25,7 @@ const Contact = () => {
                                         <span className="block text-xs uppercase">email</span>
                                     </div>
                                 </li>
-                                <li className="my-6 flex items-center text-left">
+                                <li className="my-6 flex items-center gap-2  text-left">
                                     <a title="Instagram" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-violet-600 dark:text-gray-50">
                                         <svg
                                             className="w-[16px] h-[16px] fill-[#000000]"
@@ -49,7 +49,7 @@ const Contact = () => {
                                         <span className="block text-xs uppercase">LINKEDIN</span>
                                     </div>
                                 </li>
-                                <li className="my-6 flex items-center text-left">
+                                <li className="my-6 flex items-center gap-2  text-left">
                                     <a title="Facebook" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-violet-600 dark:text-gray-50">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-4 h-4">
                                             <path d="M32 16c0-8.839-7.167-16-16-16-8.839 0-16 7.161-16 16 0 7.984 5.849 14.604 13.5 15.803v-11.177h-4.063v-4.625h4.063v-3.527c0-4.009 2.385-6.223 6.041-6.223 1.751 0 3.584 0.312 3.584 0.312v3.937h-2.021c-1.984 0-2.604 1.235-2.604 2.5v3h4.437l-0.713 4.625h-3.724v11.177c7.645-1.199 13.5-7.819 13.5-15.803z"></path>
@@ -63,7 +63,7 @@ const Contact = () => {
                                         <span className="block text-xs uppercase">Facebook</span>
                                     </div>
                                 </li>
-                                <li className="my-6 flex items-center text-left">
+                                <li className="my-6 flex items-center gap-2  text-left">
                                     <a title="Facebook" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-violet-600 dark:text-gray-50">
                                         <svg
                                             className="w-[16px] h-[16px] fill-[#000000]"
@@ -83,7 +83,7 @@ const Contact = () => {
                                         <span className="block text-xs uppercase">GITHUB</span>
                                     </div>
                                 </li>
-                                <li className="my-6 flex items-center text-left">
+                                <li className="my-6 flex items-center text-left gap-2 ">
                                     <a title="Facebook" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-violet-600 dark:text-gray-50">
                                         <svg
                                             className="w-[16px] h-[16px] fill-[#000000]"
